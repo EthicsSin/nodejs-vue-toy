@@ -1,15 +1,13 @@
 <template>
   <div>
-    <h1>Hello World Title33</h1>
-    <h3>{{ text }}</h3>
-    <h3>{{ lists }}</h3>
+    <h1>Vue Postgresql NodeJS</h1>
     <table>
       <thead>
         <th>번호</th>
         <th>성</th>
       </thead>
       <tbody>
-        <tr :v-for="list in lists">
+        <tr v-for="list in lists" :key="list.toy_seq">
           <td>
             {{ list.toy_seq }}
           </td>

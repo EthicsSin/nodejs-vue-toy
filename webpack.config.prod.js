@@ -1,11 +1,10 @@
 const config = {}
 
-const CssNano = require('cssnano')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-config.mode = "production"
+config.mode = 'production'
 
 config.entry = ['babel-polyfill', './client/index.js']
 
@@ -69,6 +68,5 @@ config.module = {
     }
   ]
 }
-
 
 module.exports = config

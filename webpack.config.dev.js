@@ -2,7 +2,7 @@ const config = {}
 
 const webpack = require('webpack')
 
-config.mode = "development"
+config.mode = 'development'
 
 config.devServer = {
   hot: true
@@ -26,11 +26,11 @@ config.module = {
     {
       test: /\.scss$/,
       use: [{
-          loader: "style-loader"
+        loader: 'style-loader'
       }, {
-          loader: "css-loader"
+        loader: 'css-loader'
       }, {
-          loader: "sass-loader"
+        loader: 'sass-loader'
       }]
     }
   ]
