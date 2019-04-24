@@ -4,15 +4,19 @@
     <table>
       <thead>
         <th>번호</th>
-        <th>성</th>
+        <th>아이디</th>
+        <th>이름</th>
       </thead>
       <tbody>
-        <tr v-for="list in lists" :key="list.toy_seq">
+        <tr v-for="list in lists" :key="list.user_no">
           <td>
-            {{ list.toy_seq }}
+            {{ list.user_no }}
           </td>
           <td>
-            {{ list.toy_name }}
+            {{ list.user_id }}
+          </td>
+          <td>
+            {{ list.user_name }}
           </td>
         </tr>
       </tbody>
@@ -25,7 +29,7 @@ export default {
   data () {
     return {
       text: 'fetching...',
-      lists: 'aaa'
+      lists: ''
     }
   },
   mounted: async function () {

@@ -4,8 +4,7 @@ const dayjs = require('dayjs')
 const chalk = require('chalk')
 
 logger.info()
-logger.info(chalk.bold('---------------------[ Server starting at %s ]---------------------------'), dayjs()
-  .format('YYYY-MM-DD HH:mm:ss.SSS'))
+logger.info(chalk.bold('---------------------[ Server starting at %s ]---------------------------'), dayjs().format('YYYY-MM-DD HH:mm:ss.SSS'))
 
 const models = require('./models')
 const app = require('./core/express')
